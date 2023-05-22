@@ -30,7 +30,7 @@ void	free_stack(t_stack **stack)
 
 void	stack_check(t_stack *stack_a, t_stack *stack_b)
 {
-	if (is_sorted(stack_a) && lst_len(stack_b) == 0)
+	if (stack_a && is_sorted(stack_a) && lst_len(stack_b) == 0)
 	{
 		put_str(GREEN);
 		put_str("OK\n");
